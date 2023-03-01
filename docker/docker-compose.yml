@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    container_name: app
+    restart: always
+    ports:
+      - 8000:8000
+    networks:
+      - default
+
+  worker:
+    build: .
+    command: celery worker --app=worker.celery --loglevel=info --logfile=logs/celery.log
+    container_name: worker
+    restart: always
+    ports:
+      - 8000:8000
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
