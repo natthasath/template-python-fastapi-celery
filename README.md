@@ -8,9 +8,16 @@ FastAPI is a modern, fast (high-performance), web framework for building APIs wi
 
 ### 🏆 Run
 
-- [http://localhost:8000/docs](http://localhost:8000/docs)
-- [http://localhost:8000/subapi/docs](http://localhost:8000/subapi/docs)
+- [http://localhost:8004](http://localhost:8004)
+- [http://localhost:5556](http://localhost:5556)
 
 ```shell
 docker-compose up -d
+```
+
+### 👉🏻 Try it out
+
+```shell
+curl http://localhost:8004/tasks -H "Content-Type: application/json" --data '{"type": 0}'
+curl http://localhost:8004/tasks/<TASK_ID>
 ```
