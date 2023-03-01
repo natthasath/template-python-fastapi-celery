@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import JSONResponse
 from celery.result import AsyncResult
-from worker import create_task
+from app.worker import create_task
 from app.routers import template, tasks
 from app.tag import SubTags, Tags
 
