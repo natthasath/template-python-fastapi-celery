@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, Form, Body
 from fastapi.responses import JSONResponse
 from celery.result import AsyncResult
-from worker import create_task
+from app.worker import create_task
 
 router = APIRouter(
     prefix="/tasks",
