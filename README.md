@@ -1,6 +1,6 @@
-# 🎉 Template Python FastAPI
+# 🎉 Template Python FastAPI Celery
 
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. It has a simple and easy to use API, is lightweight, and includes features like asynchronous support, dependency injection, and more.
+Celery is a distributed task queue for Python that helps you run tasks asynchronously across multiple worker nodes or machines, making it ideal for handling time-consuming or CPU-bound tasks in web applications, machine learning workflows, and other complex systems.
 
 ![version](https://img.shields.io/badge/version-1.0-blue)
 ![rating](https://img.shields.io/badge/rating-★★★★★-yellow)
