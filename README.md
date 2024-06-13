@@ -17,7 +17,16 @@ docker-compose up -d
 
 ### 👉🏻 Try it out
 
+<br>
+
+Trigger a new task:
+
 ```shell
 curl http://localhost:8004/tasks -H "Content-Type: application/json" --data '{"type": 0}'
+```
+
+Check the status:
+
+```shell
 curl http://localhost:8004/tasks/<TASK_ID>
 ```
